@@ -1,0 +1,18 @@
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react-swc'
+import tsConfigPaths from 'vite-plugin-tsconfig-paths'
+
+// https://vite.dev/config/
+export default defineConfig({
+  plugins: [react(),tsConfigPaths()],
+  resolve: {
+    alias: {
+      '@assets/*': "/src/assets/*",
+      '@components/*': "/src/components/*",
+      '@routes/*': "/src/routes/*",
+      '@ui/*': "/src/ui/*",
+      '@utils/*': "/src/utils/*",
+    },
+    extensions: ['.ts', '.tsx', '.js', '.jsx', '.json']
+  }
+})
