@@ -1,0 +1,14 @@
+header {
+    height: 70px;
+    background: linear-gradient(to left, #078366 0%, #1D997C 28%, #2AA689 49%, #34B093 57%, #4AC6A9 81%, #60DCBF 100%);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 0 40px;
+
+    & span {
+        color: #fff;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+}

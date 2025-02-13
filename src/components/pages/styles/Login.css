@@ -1,0 +1,38 @@
+.section-login {
+    height: calc(100vh - 80px);
+}
+
+.login-form {
+    width: 350px;
+    height: 400px;
+
+    & .header-form {
+        background-color: var(--c2);
+        display: flex;
+        justify-content: end;
+        padding: 20px;
+        height: 30px;
+        --radius: 20px;
+        border-top-left-radius: var(--radius);
+        border-top-right-radius: var(--radius);
+
+        & .header-icon {
+            background-color: var(--c1);
+            --size: 25px;
+            height: var(--size);
+            width: var(--size);
+            border-radius: 50%;
+        }
+    }
+
+    & .body-form {
+        min-height: 300px;
+        background-color: #F1F1F1;
+        border-bottom: 1px solid var(--c3);
+        border-left: 1px solid var(--c3);
+        border-right: 1px solid var(--c3);
+        border-end-end-radius: 10px;
+        border-end-start-radius: 10px;
+        padding: 20px 30px;
+    }
+}
