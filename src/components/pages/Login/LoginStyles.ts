@@ -1,9 +1,9 @@
+import { dFlexCenter } from "@global-styles/classes";
+import { c1, c2, c3 } from "@global-styles/colors";
 import { SxProps } from "@mui/system";
 
 const SectionLogin: SxProps = {
-  display: "flex",
-  justifyContent: "center",
-  alignItems: "center",
+  ...dFlexCenter,
   height: "calc(100vh - 80px)",
 };
 
@@ -13,7 +13,7 @@ const LoginForm: SxProps = {
 };
 
 const HeaderForm: SxProps = {
-  backgroundColor: "#39B598",
+  backgroundColor: c2,
   display: "flex",
   justifyContent: "end",
   padding: "20px",
@@ -23,7 +23,7 @@ const HeaderForm: SxProps = {
 };
 
 const HeaderIcon: SxProps = {
-  backgroundColor: "#60DCBF",
+  backgroundColor: c1,
   height: "25px",
   width: "25px",
   borderRadius: "50%",
@@ -32,9 +32,9 @@ const HeaderIcon: SxProps = {
 const BodyForm: SxProps = {
   minHeight: "300px",
   backgroundColor: "#F1F1F1",
-  borderBottom: "1px solid #c1c1c1",
-  borderLeft: "1px solid #c1c1c1",
-  borderRight: "1px solid #c1c1c1",
+  borderBottom: `1px solid ${c3}`,
+  borderLeft: `1px solid ${c3}`,
+  borderRight: `1px solid ${c3}`,
   borderEndEndRadius: "10px",
   borderEndStartRadius: "10px",
   padding: "20px 30px",
@@ -43,10 +43,9 @@ const BodyForm: SxProps = {
 const ButtonStyle: SxProps = {
   color: "#fff",
   boxShadow: "none",
-  backgroundColor: "#fff",
   "&:hover": {
     boxShadow: "none",
-    background: "color-mix(in srgb, #60DCBF, #000 10%)",
+    background: `color-mix(in srgb, ${c1}, #000 10%)`,
   },
 };
 

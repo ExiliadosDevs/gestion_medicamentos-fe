@@ -12,6 +12,7 @@ export default defineConfig({
       '@routes/*': "/src/routes/*",
       '@ui/*': "/src/ui/*",
       '@utils/*': "/src/utils/*",
+      '@global-styles/*': "/src/global-styles/*",
     },
     extensions: ['.ts', '.tsx', '.js', '.jsx', '.json']
   }
