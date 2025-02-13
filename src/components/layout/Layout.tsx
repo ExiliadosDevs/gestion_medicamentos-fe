@@ -1,16 +1,17 @@
-import { ThemeProvider } from "@mui/material/styles";
+import { Container } from "@mui/material";
 import { Outlet } from "react-router";
 import { Header } from "./Header";
-import { theme } from "./styles/MuiOverridesTheme";
-import { Container } from "@mui/material";
+import { ProviderWrapper } from "./ProviderWrapper";
 
 export function Layout() {
     return (
-        <ThemeProvider theme={theme}>
-            <Header />
-            <Container>
-                <Outlet />
-            </Container>
-        </ThemeProvider>
+        <ProviderWrapper>
+            <>
+                <Header />
+                <Container>
+                    <Outlet />
+                </Container>
+            </>
+        </ProviderWrapper>
     );
 }
