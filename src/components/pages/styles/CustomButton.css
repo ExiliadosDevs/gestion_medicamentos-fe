@@ -1,9 +1,0 @@
-.custom-button {
-    color: #fff;
-    box-shadow: none;
-
-    &:hover {
-        box-shadow: none;
-        background: color-mix(in srgb, var(--c1), #000 10%);
-    }
-}

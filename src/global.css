@@ -1,7 +1,0 @@
-/* archivo para declarar clases CSS globales */
-
-.d-flex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}

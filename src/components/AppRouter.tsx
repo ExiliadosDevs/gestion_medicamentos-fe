@@ -1,6 +1,6 @@
 import { BrowserRouter, Navigate, Route, Routes } from "react-router";
 import { Layout } from "./layout/Layout";
-import { Login } from "./pages/Login";
+import { Login } from "./pages/Login/Login";
 
 export function AppRouter() {
     return (

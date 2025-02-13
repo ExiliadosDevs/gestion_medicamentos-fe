@@ -17,6 +17,7 @@
     "@jsonforms/react": "^3.5.1",
     "@mui/icons-material": "^6.4.3",
     "@mui/material": "^6.4.3",
+    "@mui/system": "^6.4.3",
     "@mui/x-date-pickers": "^7.26.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
