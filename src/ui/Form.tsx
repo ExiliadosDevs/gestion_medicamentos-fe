@@ -8,7 +8,7 @@ import {
 interface Props {
   schema: object;
   uiSchema: any;
-  data: object;
+  data: any;
   onChange: ({data,errors}:{data:any, errors:any}) => void;
 }
 

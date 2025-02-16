@@ -1,5 +1,5 @@
 import { dFlexCenter } from "@global-styles/classes";
-import { c1, c2, c3 } from "@global-styles/colors";
+import { c1, c3 } from "@global-styles/colors";
 import { SxProps } from "@mui/system";
 
 const SectionLogin: SxProps = {
@@ -12,48 +12,35 @@ const LoginForm: SxProps = {
   height: "400px",
 };
 
-const HeaderForm: SxProps = {
-  backgroundColor: c2,
-  display: "flex",
-  justifyContent: "end",
-  padding: "20px",
-  height: "30px",
-  borderTopLeftRadius: "20px",
-  borderTopRightRadius: "20px",
-};
-
-const HeaderIcon: SxProps = {
-  backgroundColor: c1,
-  height: "25px",
-  width: "25px",
-  borderRadius: "50%",
-};
-
 const BodyForm: SxProps = {
-  minHeight: "300px",
   backgroundColor: "#F1F1F1",
-  borderBottom: `1px solid ${c3}`,
-  borderLeft: `1px solid ${c3}`,
-  borderRight: `1px solid ${c3}`,
-  borderEndEndRadius: "10px",
-  borderEndStartRadius: "10px",
+  border: `1px solid ${c3}`,
+  borderRadius: "10px",
   padding: "20px 30px",
+  display: "flex",
+  flexDirection: "column",
 };
 
 const ButtonStyle: SxProps = {
-  color: "#fff",
+  fontWeight:"600",
   boxShadow: "none",
+  color: "#fff",
+  backgroundColor: "#39B598",
+  margin:"12px 0",
   "&:hover": {
     boxShadow: "none",
     background: `color-mix(in srgb, ${c1}, #000 10%)`,
   },
 };
 
+const SpanStyle: SxProps = {
+  color: "#696464"
+}
+
 export default {
   SectionLogin,
   LoginForm,
-  HeaderForm,
-  HeaderIcon,
   BodyForm,
   ButtonStyle,
+  SpanStyle
 };
