@@ -4,6 +4,7 @@ interface Props {
     children: ReactNode;
     fallback: ReactNode;
     resetCondition?: any;
+    error?: boolean;
 }
 
 interface State {
@@ -30,7 +31,7 @@ export class ErrorBoundary extends Component<Props, State> {
     }
 
     render() {
-        if(this.state.hasError){
+        if(this.state.hasError || this.props.error){
             return this.props.fallback;
         }
         return this.props.children;
