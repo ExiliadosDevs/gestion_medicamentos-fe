@@ -1,31 +1,23 @@
-import { createTheme } from "@mui/material/styles";
+import { c1, c2, c4 } from "@global-styles/colors";
+import { createTheme } from "@mui/material";
 
 export const theme = createTheme({
   palette: {
     primary: {
-      main: "#60DCBF",
+      main: c1,
       // light: will be calculated from palette.primary.main,
       // dark: will be calculated from palette.primary.main,
       // contrastText: will be calculated to contrast with palette.primary.main
     },
   },
   components: {
-    MuiOutlinedInput: {
+    MuiFormLabel: {
       styleOverrides: {
         root: {
-          "& .MuiOutlinedInput-notchedOutline": {
-            borderColor: "#1976d2", // Color del borde
-          }
-        },
-      },
-    },
-    MuiInputLabel: {
-      styleOverrides: {
-        root: {
-          color: "#1976d2", // Color del label,
-          "& .Mui-focused": {
-            borderColor: "#0f0"
-          }
+          color: c4,// Color del placeholder del input
+          '&.Mui-focused': {
+            color: c2, // Color del label cuando el input está enfocado
+          },
         },
       },
     },
