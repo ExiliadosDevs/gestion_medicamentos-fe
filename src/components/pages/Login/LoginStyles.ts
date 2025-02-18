@@ -8,17 +8,21 @@ const SectionLogin: SxProps = {
 };
 
 const LoginForm: SxProps = {
-  width: "350px",
-  height: "400px",
+  width: "100%",
+  height: "100%",
+  ...dFlexCenter,
 };
 
 const BodyForm: SxProps = {
+  width: "270px",
+  height: "240px",
   backgroundColor: "#F1F1F1",
   border: `1px solid ${c3}`,
   borderRadius: "10px",
-  padding: "20px 30px",
+  padding: "30px 20px",
   display: "flex",
   flexDirection: "column",
+  justifyContent: "space-between"
 };
 
 const ButtonStyle: SxProps = {

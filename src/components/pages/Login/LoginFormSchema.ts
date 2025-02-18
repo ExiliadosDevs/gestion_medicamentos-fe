@@ -16,12 +16,10 @@ export const LoginFormUiSchema =
     {
       type: "Control",
       scope: "#/properties/email",
-      label: "Email"
     },
     {
       type: "Control",
       scope: "#/properties/password",
-
-    },
+    }
   ]
 };
